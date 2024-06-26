@@ -1,0 +1,68 @@
+.teacher .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+
+}
+.teacher .heading{
+    font-size: 4rem;
+    color:rgb(239, 176, 95);
+    text-align: centre;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.teacher .box-container .box{
+    background: white;
+    padding: 1rem 1rem;
+    text-align: centre;
+    box-shadow: #e9768f;
+    border-radius: 2rem;
+       
+}
+.teacher .box-container .box img{
+    height: 25rem;
+    width: 25rem;
+    /* padding-left: rem; */
+}
+
+.teacher .box-container .box h3{
+     font-size: 2.5rem;
+     color: black;
+     max-width: 250px;
+}
+.teacher .box-container .box p{
+    font-size: 1.7rem;
+    color: black;
+    margin-bottom: 1rem;
+    max-width: 250px;
+}
+
+
+
+@media screen  and (max-width:991px){
+   
+    .teacher .box-container{
+        grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+    }
+    .teacher .heading{
+        font-size: 3rem;
+    }
+    .teacher .box-container .box{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+
+    .teacher .box-container .box h3{
+        font-size: 2rem;
+    }
+
+    .teacher .box-container .box p{
+        font-size: 1.2rem;
+    }
+    .teacher .box-container .box img{
+        height: 16rem;
+        width: 15rem;
+    }
+}
